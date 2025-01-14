@@ -2,9 +2,6 @@ import java.util.Objects;
 
 // The Customer class represents a bank customer
 public class Customer {
-    private String name;    // Customer name
-    private String id;      // Unique customer ID
-    private Account account; // Customer's account
 
     // Constructor to initialize a customer
     public Customer(String id, String name, Account account) {
@@ -12,6 +9,12 @@ public class Customer {
         this.name = name;
         this.account = account;
     }
+    public Customer() {
+    }
+    private String name;    // Customer name
+    private String id;      // Unique customer ID
+    private Account account; // Customer's account
+
 
     // Get the customer's name
     public String getName() {
