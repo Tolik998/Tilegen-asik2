@@ -10,7 +10,8 @@ public class Main {
 
         // Create customers
         Customer customer1 = new Customer("C001", "Beksultan", account1);
-        PremiumCustomer customer2 = new PremiumCustomer("C002", "Sanjar", account2, 0.05);
+        PremiumCustomer customer2;
+        customer2 = new PremiumCustomer("C002", "Sanjar", account2, 0.05);
 
         // Add customers to the bank
         bank.addCustomer(customer1);
