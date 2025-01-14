@@ -20,14 +20,12 @@ public class Bank {
         return customers;
     }
 
-    // Filter customers by name
     public List<Customer> filterCustomersByName(String name) {
         return customers.stream()
                 .filter(customer -> customer.getName().equalsIgnoreCase(name))
                 .collect(Collectors.toList());
     }
 
-    // Search customer by ID
     public Customer findCustomerById(String id) {
         return customers.stream()
                 .filter(customer -> customer.getId().equals(id))
@@ -35,7 +33,6 @@ public class Bank {
                 .orElse(null);
     }
 
-    // Sort customers by name
     public List<Customer> sortCustomersByName() {
         return customers.stream()
                 .sorted(Comparator.comparing(Customer::getName))
