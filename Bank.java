@@ -5,14 +5,17 @@ import java.util.stream.Collectors;
 
 // The Bank class represents a bank that manages customers
 public class Bank {
-    private String name;               // Bank name
-    private List<Customer> customers; // List of customers
 
     // Constructor to initialize the bank
     public Bank(String name) {
         this.name = name;
         this.customers = new ArrayList<>();
     }
+    public Bank(){
+
+    }
+    private String name;               // Bank name
+    private List<Customer> customers; // List of customers
 
     // Add a customer to the bank
     public void addCustomer(Customer customer) {
