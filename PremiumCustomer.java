@@ -1,12 +1,17 @@
 // The PremiumCustomer class extends the functionality of a basic customer
 public class PremiumCustomer extends Customer {
-    private double cashbackRate; // Cashback rate
 
     // Constructor for a premium customer
     public PremiumCustomer(String id, String name, Account account, double cashbackRate) {
         super(id, name, account);
         this.cashbackRate = cashbackRate;
     }
+    public PremiumCustomer() {
+
+    }
+
+    private double cashbackRate; // Cashback rate
+
 
     // Get the cashback rate
     public double getCashbackRate() {
