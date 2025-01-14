@@ -2,14 +2,17 @@ import java.util.Objects;
 
 // The Account class represents a bank account
 public class Account {
-    private String accountNumber; // Account number
-    private double balance;       // Account balance
 
     // Constructor to initialize the account
     public Account(String accountNumber, double initialBalance) {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
     }
+    public Account(){
+
+    }
+    private String accountNumber; // Account number
+    private double balance;       // Account balance
 
     // Get the account number
     public String getAccountNumber() {
